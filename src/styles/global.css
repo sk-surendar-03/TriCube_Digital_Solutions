@@ -1,0 +1,236 @@
+/* ==========================================================================
+   TriCube Digital Solutions - Global Stylesheet
+   Preserving exact typography, colors, animations, and media breakpoints
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  color: #14264F;
+  background: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #1B6F64;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header & Navigation */
+.nav a {
+  color: #14264F;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #1B6F64;
+  text-decoration: none;
+}
+
+/* Button & interactive hover states */
+.btn:hover {
+  background: #0C1A3A !important;
+  text-decoration: none;
+}
+
+.btnlight:hover {
+  background: #E8EDF3 !important;
+  text-decoration: none;
+}
+
+.row:hover {
+  background: #F4F6F9;
+}
+
+/* Step framework line */
+.stepline {
+  transition: background-color 0.25s ease;
+}
+
+.step:hover .stepline {
+  background: #1F7A6E !important;
+}
+
+/* Core expertise */
+.core-b {
+  border-left: 1px solid #C4CAD6;
+}
+
+.corelink:hover {
+  color: #14264F;
+}
+
+/* Client logos marquee */
+.marquee {
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.mtrack {
+  display: flex;
+  width: max-content;
+  animation: marq 48s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marq {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee:hover .mtrack,
+.marquee:active .mtrack,
+.marquee:focus-within .mtrack {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mtrack {
+    animation: none;
+  }
+  .marquee {
+    overflow-x: auto;
+    touch-action: auto;
+  }
+}
+
+/* Industry cards */
+.ind {
+  transition: border-top-color 0.2s ease;
+}
+
+.ind:hover {
+  border-top-color: #1F7A6E !important;
+}
+
+/* Footer links */
+.foot a {
+  color: #C9D2DE;
+  font-size: 14px;
+}
+
+.foot a:hover {
+  color: #FFFFFF;
+}
+
+/* Background drift animation */
+@keyframes drift {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(104px, 180px);
+  }
+}
+
+.drift {
+  animation: drift 70s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drift {
+    animation: none;
+  }
+  .ind {
+    transition: none;
+  }
+  .stepline {
+    transition: none;
+  }
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  .stepline {
+    display: none !important;
+  }
+  .step {
+    border-top: 1px solid #C4CAD6;
+    padding-top: 28px;
+  }
+}
+
+@media (max-width: 560px) {
+  .steps {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .coregrid {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    row-gap: 64px;
+  }
+  .core-a,
+  .core-b {
+    padding: 0 !important;
+  }
+  .core-b {
+    border-left: 0;
+    border-top: 1px solid #C4CAD6;
+    padding-top: 56px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .strengths {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .strengths {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .indgrid {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+  .indgrid .ind:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  .stat {
+    border-left: 0 !important;
+    padding: 24px 16px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none !important;
+  }
+  .utilright {
+    display: none !important;
+  }
+}
