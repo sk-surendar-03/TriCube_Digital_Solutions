@@ -50,13 +50,13 @@ export default function Hero() {
           position: 'relative',
           maxWidth: '1240px',
           margin: '0 auto',
-          padding: '120px 40px 96px',
+          padding: 'clamp(80px, 12vw, 120px) clamp(20px, 4vw, 40px) clamp(64px, 8vw, 96px)',
           boxSizing: 'border-box',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           textAlign: 'center',
-          minHeight: '680px',
+          minHeight: '640px',
           justifyContent: 'center'
         }}
       >
@@ -71,20 +71,21 @@ export default function Hero() {
         {/* Main Hero Headline */}
         <h1
           style={{
-            fontFamily: "'Source Serif 4', Georgia, serif",
+            fontFamily: "'Fraunces', Georgia, serif",
             fontWeight: 600,
-            fontSize: '68px',
-            lineHeight: 1.08,
+            fontSize: 'clamp(32px, 5.5vw + 1rem, 64px)',
+            lineHeight: 1.12,
             letterSpacing: '-0.02em',
             margin: '0 0 28px 0',
-            maxWidth: '1000px'
+            maxWidth: '1000px',
+            textWrap: 'balance'
           }}
         >
           Technology that keeps large organisations running, and moving forward.
         </h1>
 
         {/* Subtitle */}
-        <p style={{ fontSize: '20px', lineHeight: 1.6, color: '#E3E9F1', margin: '0 0 48px 0', maxWidth: '720px' }}>
+        <p style={{ fontSize: 'clamp(16px, 2.5vw, 20px)', lineHeight: 1.6, color: '#E3E9F1', margin: '0 0 48px 0', maxWidth: '720px' }}>
           We design, build and operate the systems that enterprises depend on, in every market where our clients work.
         </p>
 
@@ -96,7 +97,7 @@ export default function Hero() {
             background: '#FFFFFF',
             color: '#14264F',
             textAlign: 'left',
-            padding: '24px 28px 28px',
+            padding: 'clamp(20px, 4vw, 28px)',
             boxSizing: 'border-box'
           }}
         >
@@ -116,7 +117,7 @@ export default function Hero() {
                 boxSizing: 'border-box',
                 minHeight: '52px',
                 padding: '0 16px',
-                fontFamily: "'IBM Plex Sans', Arial, sans-serif",
+                fontFamily: "'Plus Jakarta Sans', Arial, sans-serif",
                 fontSize: '16px',
                 color: '#14264F',
                 border: '1px solid #9AA7B8',
@@ -129,7 +130,7 @@ export default function Hero() {
               style={{
                 background: '#14264F',
                 color: '#FFFFFF',
-                fontFamily: "'IBM Plex Sans', Arial, sans-serif",
+                fontFamily: "'Plus Jakarta Sans', Arial, sans-serif",
                 fontWeight: 600,
                 fontSize: '16px',
                 padding: '0 32px',

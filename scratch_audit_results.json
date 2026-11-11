@@ -1,0 +1,614 @@
+[
+  {
+    "viewport": "320px (Small mobile)",
+    "width": 320,
+    "height": 700,
+    "pages": {
+      "home": {
+        "url": "http://localhost:5173/",
+        "overflow": {
+          "innerWidth": 339,
+          "scrollWidth": 339,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "home_320x700.png"
+      },
+      "about": {
+        "url": "http://localhost:5173/about",
+        "overflow": {
+          "innerWidth": 369,
+          "scrollWidth": 369,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "about_320x700.png"
+      },
+      "contact": {
+        "url": "http://localhost:5173/contact",
+        "overflow": {
+          "innerWidth": 362,
+          "scrollWidth": 362,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "contact_320x700.png",
+        "form_validation_test": {
+          "formFound": true,
+          "submitBtnFound": true,
+          "errorCount": 0,
+          "errors": []
+        },
+        "validation_screenshot": "contact_validation_320x700.png"
+      }
+    }
+  },
+  {
+    "viewport": "375px (iPhone SE size)",
+    "width": 375,
+    "height": 667,
+    "pages": {
+      "home": {
+        "url": "http://localhost:5173/",
+        "overflow": {
+          "innerWidth": 375,
+          "scrollWidth": 375,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "home_375x667.png"
+      },
+      "about": {
+        "url": "http://localhost:5173/about",
+        "overflow": {
+          "innerWidth": 375,
+          "scrollWidth": 375,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "about_375x667.png"
+      },
+      "contact": {
+        "url": "http://localhost:5173/contact",
+        "overflow": {
+          "innerWidth": 375,
+          "scrollWidth": 375,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "contact_375x667.png",
+        "form_validation_test": {
+          "formFound": true,
+          "submitBtnFound": true,
+          "errorCount": 0,
+          "errors": []
+        },
+        "validation_screenshot": "contact_validation_375x667.png"
+      }
+    }
+  },
+  {
+    "viewport": "390px (Mobile)",
+    "width": 390,
+    "height": 844,
+    "pages": {
+      "home": {
+        "url": "http://localhost:5173/",
+        "overflow": {
+          "innerWidth": 390,
+          "scrollWidth": 390,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "home_390x844.png"
+      },
+      "about": {
+        "url": "http://localhost:5173/about",
+        "overflow": {
+          "innerWidth": 390,
+          "scrollWidth": 390,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "about_390x844.png"
+      },
+      "contact": {
+        "url": "http://localhost:5173/contact",
+        "overflow": {
+          "innerWidth": 390,
+          "scrollWidth": 390,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "contact_390x844.png",
+        "form_validation_test": {
+          "formFound": true,
+          "submitBtnFound": true,
+          "errorCount": 0,
+          "errors": []
+        },
+        "validation_screenshot": "contact_validation_390x844.png"
+      }
+    }
+  },
+  {
+    "viewport": "430px (Large mobile)",
+    "width": 430,
+    "height": 932,
+    "pages": {
+      "home": {
+        "url": "http://localhost:5173/",
+        "overflow": {
+          "innerWidth": 430,
+          "scrollWidth": 430,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "home_430x932.png"
+      },
+      "about": {
+        "url": "http://localhost:5173/about",
+        "overflow": {
+          "innerWidth": 430,
+          "scrollWidth": 430,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "about_430x932.png"
+      },
+      "contact": {
+        "url": "http://localhost:5173/contact",
+        "overflow": {
+          "innerWidth": 430,
+          "scrollWidth": 430,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "contact_430x932.png",
+        "form_validation_test": {
+          "formFound": true,
+          "submitBtnFound": true,
+          "errorCount": 0,
+          "errors": []
+        },
+        "validation_screenshot": "contact_validation_430x932.png"
+      }
+    }
+  },
+  {
+    "viewport": "768px (Small tablet)",
+    "width": 768,
+    "height": 1024,
+    "pages": {
+      "home": {
+        "url": "http://localhost:5173/",
+        "overflow": {
+          "innerWidth": 768,
+          "scrollWidth": 768,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "home_768x1024.png"
+      },
+      "about": {
+        "url": "http://localhost:5173/about",
+        "overflow": {
+          "innerWidth": 768,
+          "scrollWidth": 768,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "about_768x1024.png"
+      },
+      "contact": {
+        "url": "http://localhost:5173/contact",
+        "overflow": {
+          "innerWidth": 768,
+          "scrollWidth": 768,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": false,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "contact_768x1024.png",
+        "form_validation_test": {
+          "formFound": true,
+          "submitBtnFound": true,
+          "errorCount": 0,
+          "errors": []
+        },
+        "validation_screenshot": "contact_validation_768x1024.png"
+      }
+    }
+  },
+  {
+    "viewport": "1024px (Tablet)",
+    "width": 1024,
+    "height": 768,
+    "pages": {
+      "home": {
+        "url": "http://localhost:5173/",
+        "overflow": {
+          "innerWidth": 1024,
+          "scrollWidth": 1009,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": true,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "home_1024x768.png"
+      },
+      "about": {
+        "url": "http://localhost:5173/about",
+        "overflow": {
+          "innerWidth": 1024,
+          "scrollWidth": 1009,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": true,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "about_1024x768.png"
+      },
+      "contact": {
+        "url": "http://localhost:5173/contact",
+        "overflow": {
+          "innerWidth": 1024,
+          "scrollWidth": 1009,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": true,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "contact_1024x768.png",
+        "form_validation_test": {
+          "formFound": true,
+          "submitBtnFound": true,
+          "errorCount": 0,
+          "errors": []
+        },
+        "validation_screenshot": "contact_validation_1024x768.png"
+      }
+    }
+  },
+  {
+    "viewport": "1366px (Laptop)",
+    "width": 1366,
+    "height": 768,
+    "pages": {
+      "home": {
+        "url": "http://localhost:5173/",
+        "overflow": {
+          "innerWidth": 1366,
+          "scrollWidth": 1351,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": true,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "home_1366x768.png"
+      },
+      "about": {
+        "url": "http://localhost:5173/about",
+        "overflow": {
+          "innerWidth": 1366,
+          "scrollWidth": 1351,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": true,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "about_1366x768.png"
+      },
+      "contact": {
+        "url": "http://localhost:5173/contact",
+        "overflow": {
+          "innerWidth": 1366,
+          "scrollWidth": 1351,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": true,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "contact_1366x768.png",
+        "form_validation_test": {
+          "formFound": true,
+          "submitBtnFound": true,
+          "errorCount": 0,
+          "errors": []
+        },
+        "validation_screenshot": "contact_validation_1366x768.png"
+      }
+    }
+  },
+  {
+    "viewport": "1440px (Desktop)",
+    "width": 1440,
+    "height": 900,
+    "pages": {
+      "home": {
+        "url": "http://localhost:5173/",
+        "overflow": {
+          "innerWidth": 1440,
+          "scrollWidth": 1425,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": true,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "home_1440x900.png"
+      },
+      "about": {
+        "url": "http://localhost:5173/about",
+        "overflow": {
+          "innerWidth": 1440,
+          "scrollWidth": 1425,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": true,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "about_1440x900.png"
+      },
+      "contact": {
+        "url": "http://localhost:5173/contact",
+        "overflow": {
+          "innerWidth": 1440,
+          "scrollWidth": 1425,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": true,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "contact_1440x900.png",
+        "form_validation_test": {
+          "formFound": true,
+          "submitBtnFound": true,
+          "errorCount": 0,
+          "errors": []
+        },
+        "validation_screenshot": "contact_validation_1440x900.png"
+      }
+    }
+  },
+  {
+    "viewport": "1920px (Large desktop)",
+    "width": 1920,
+    "height": 1080,
+    "pages": {
+      "home": {
+        "url": "http://localhost:5173/",
+        "overflow": {
+          "innerWidth": 1920,
+          "scrollWidth": 1905,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": true,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "home_1920x1080.png"
+      },
+      "about": {
+        "url": "http://localhost:5173/about",
+        "overflow": {
+          "innerWidth": 1920,
+          "scrollWidth": 1905,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": true,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "about_1920x1080.png"
+      },
+      "contact": {
+        "url": "http://localhost:5173/contact",
+        "overflow": {
+          "innerWidth": 1920,
+          "scrollWidth": 1905,
+          "hasOverflow": false,
+          "overflowDiff": 0,
+          "offenders": []
+        },
+        "navigation": {
+          "navPresent": true,
+          "navVisible": true,
+          "hamburgerPresent": false
+        },
+        "console_errors": [],
+        "failed_network": [],
+        "screenshot": "contact_1920x1080.png",
+        "form_validation_test": {
+          "formFound": true,
+          "submitBtnFound": true,
+          "errorCount": 0,
+          "errors": []
+        },
+        "validation_screenshot": "contact_validation_1920x1080.png"
+      }
+    }
+  }
+]

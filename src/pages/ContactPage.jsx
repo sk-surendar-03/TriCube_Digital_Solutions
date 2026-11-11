@@ -212,7 +212,7 @@ export default function ContactPage() {
           position: 'relative',
           background: '#14264F',
           color: '#FFFFFF',
-          padding: '112px 40px 96px',
+          padding: 'clamp(80px, 12vw, 112px) clamp(20px, 4vw, 40px) clamp(56px, 8vw, 96px)',
           boxSizing: 'border-box',
           textAlign: 'center'
         }}
@@ -237,14 +237,15 @@ export default function ContactPage() {
           {/* Heading */}
           <h1
             style={{
-              fontFamily: "'Source Serif 4', Georgia, serif",
+              fontFamily: "'Fraunces', Georgia, serif",
               fontWeight: 600,
-              fontSize: '52px',
+              fontSize: 'clamp(32px, 5vw + 1rem, 52px)',
               lineHeight: 1.15,
               letterSpacing: '-0.02em',
               margin: '0 auto 24px',
               maxWidth: '880px',
-              color: '#FFFFFF'
+              color: '#FFFFFF',
+              textWrap: 'balance'
             }}
           >
             Let's Start a Conversation
@@ -253,7 +254,7 @@ export default function ContactPage() {
           {/* Description */}
           <p
             style={{
-              fontSize: '19px',
+              fontSize: 'clamp(16px, 2.5vw, 19px)',
               lineHeight: 1.6,
               color: '#E3E9F1',
               maxWidth: '780px',
@@ -272,7 +273,7 @@ export default function ContactPage() {
         id="contact-main"
         style={{
           background: '#F8FAFC',
-          padding: '96px 40px 112px',
+          padding: 'clamp(56px, 8vw, 96px) clamp(20px, 4vw, 40px) clamp(64px, 8vw, 112px)',
           boxSizing: 'border-box'
         }}
       >
@@ -281,8 +282,8 @@ export default function ContactPage() {
             maxWidth: '1240px',
             margin: '0 auto',
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '48px',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: 'clamp(32px, 5vw, 48px)',
             alignItems: 'start'
           }}
         >
@@ -299,7 +300,7 @@ export default function ContactPage() {
               style={{
                 background: '#FFFFFF',
                 border: '1px solid #D5DBE3',
-                padding: '40px 36px',
+                padding: 'clamp(28px, 5vw, 40px) clamp(20px, 5vw, 36px)',
                 boxSizing: 'border-box'
               }}
             >
@@ -320,7 +321,7 @@ export default function ContactPage() {
 
               <h2
                 style={{
-                  fontFamily: "'Source Serif 4', Georgia, serif",
+                  fontFamily: "'Fraunces', Georgia, serif",
                   fontWeight: 600,
                   fontSize: '28px',
                   lineHeight: 1.25,
@@ -365,7 +366,7 @@ export default function ContactPage() {
                 <a
                   href="mailto:contact@tricubedigitalsolutions.com"
                   style={{
-                    fontSize: '18px',
+                    fontSize: 'clamp(15px, 2.8vw, 18px)',
                     fontWeight: 600,
                     color: '#1F7A6E',
                     textDecoration: 'none',
@@ -399,12 +400,12 @@ export default function ContactPage() {
                 >
                   <span
                     style={{
-                      fontSize: '12px',
-                      fontWeight: 600,
-                      letterSpacing: '0.12em',
-                      color: '#64748B'
-                    }}
-                  >
+                    fontSize: '12px',
+                    fontWeight: 600,
+                    letterSpacing: '0.12em',
+                    color: '#64748B'
+                  }}
+                >
                     WHATSAPP ENQUIRY
                   </span>
                   <a
@@ -429,7 +430,7 @@ export default function ContactPage() {
               style={{
                 background: '#FFFFFF',
                 border: '1px solid #D5DBE3',
-                padding: '36px',
+                padding: 'clamp(24px, 5vw, 36px) clamp(20px, 5vw, 36px)',
                 boxSizing: 'border-box'
               }}
             >
@@ -446,9 +447,10 @@ export default function ContactPage() {
               </div>
               <h3
                 style={{
-                  fontFamily: "'Source Serif 4', Georgia, serif",
+                  fontFamily: "'Fraunces', Georgia, serif",
                   fontWeight: 600,
                   fontSize: '20px',
+                  lineHeight: 1.3,
                   color: '#14264F',
                   margin: '0 0 20px'
                 }}
@@ -485,7 +487,7 @@ export default function ContactPage() {
             style={{
               background: '#FFFFFF',
               border: '1px solid #D5DBE3',
-              padding: '44px 40px',
+              padding: 'clamp(28px, 5vw, 44px) clamp(20px, 5vw, 40px)',
               boxSizing: 'border-box'
             }}
           >
@@ -503,9 +505,10 @@ export default function ContactPage() {
               </div>
               <h2
                 style={{
-                  fontFamily: "'Source Serif 4', Georgia, serif",
+                  fontFamily: "'Fraunces', Georgia, serif",
                   fontWeight: 600,
-                  fontSize: '32px',
+                  fontSize: 'clamp(24px, 4vw, 30px)',
+                  lineHeight: 1.2,
                   color: '#14264F',
                   margin: '0 0 12px'
                 }}
@@ -613,7 +616,7 @@ export default function ContactPage() {
                       minHeight: '48px',
                       padding: '10px 14px',
                       fontSize: '15px',
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "'Plus Jakarta Sans', Arial, sans-serif",
                       border: `1px solid ${errors.fullName && touched.fullName ? '#DC2626' : '#D5DBE3'}`,
                       background: '#FFFFFF',
                       color: '#14264F',
@@ -657,7 +660,7 @@ export default function ContactPage() {
                       minHeight: '48px',
                       padding: '10px 14px',
                       fontSize: '15px',
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "'Plus Jakarta Sans', Arial, sans-serif",
                       border: `1px solid ${errors.email && touched.email ? '#DC2626' : '#D5DBE3'}`,
                       background: '#FFFFFF',
                       color: '#14264F',
@@ -701,7 +704,7 @@ export default function ContactPage() {
                       minHeight: '48px',
                       padding: '10px 14px',
                       fontSize: '15px',
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "'Plus Jakarta Sans', Arial, sans-serif",
                       border: `1px solid ${errors.phone && touched.phone ? '#DC2626' : '#D5DBE3'}`,
                       background: '#FFFFFF',
                       color: '#14264F',
@@ -743,7 +746,7 @@ export default function ContactPage() {
                       minHeight: '48px',
                       padding: '10px 14px',
                       fontSize: '15px',
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "'Plus Jakarta Sans', Arial, sans-serif",
                       border: '1px solid #D5DBE3',
                       background: '#FFFFFF',
                       color: '#14264F',
@@ -780,7 +783,7 @@ export default function ContactPage() {
                       minHeight: '48px',
                       padding: '10px 14px',
                       fontSize: '15px',
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "'Plus Jakarta Sans', Arial, sans-serif",
                       border: `1px solid ${errors.enquiryType && touched.enquiryType ? '#DC2626' : '#D5DBE3'}`,
                       background: '#FFFFFF',
                       color: formData.enquiryType ? '#14264F' : '#64748B',
@@ -834,7 +837,7 @@ export default function ContactPage() {
                       minHeight: '48px',
                       padding: '10px 14px',
                       fontSize: '15px',
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "'Plus Jakarta Sans', Arial, sans-serif",
                       border: `1px solid ${errors.subject && touched.subject ? '#DC2626' : '#D5DBE3'}`,
                       background: '#FFFFFF',
                       color: '#14264F',
@@ -878,7 +881,7 @@ export default function ContactPage() {
                       padding: '12px 14px',
                       fontSize: '15px',
                       lineHeight: 1.6,
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "'Plus Jakarta Sans', Arial, sans-serif",
                       border: `1px solid ${errors.message && touched.message ? '#DC2626' : '#D5DBE3'}`,
                       background: '#FFFFFF',
                       color: '#14264F',
@@ -920,6 +923,7 @@ export default function ContactPage() {
                         marginTop: '3px',
                         width: '18px',
                         height: '18px',
+                        flexShrink: 0,
                         cursor: 'pointer',
                         accentColor: '#1F7A6E'
                       }}

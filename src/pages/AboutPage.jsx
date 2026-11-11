@@ -13,7 +13,7 @@ export default function AboutPage() {
           position: 'relative',
           background: '#14264F',
           color: '#FFFFFF',
-          padding: '120px 40px 96px',
+          padding: 'clamp(80px, 12vw, 120px) clamp(20px, 4vw, 40px) clamp(56px, 8vw, 96px)',
           boxSizing: 'border-box',
           textAlign: 'center',
           overflow: 'hidden'
@@ -39,13 +39,14 @@ export default function AboutPage() {
           {/* Main Title */}
           <h1
             style={{
-              fontFamily: "'Source Serif 4', Georgia, serif",
+              fontFamily: "'Fraunces', Georgia, serif",
               fontWeight: 600,
-              fontSize: '56px',
+              fontSize: 'clamp(32px, 5vw + 1rem, 54px)',
               lineHeight: 1.15,
               letterSpacing: '-0.02em',
               margin: '0 auto 28px',
-              maxWidth: '920px'
+              maxWidth: '920px',
+              textWrap: 'balance'
             }}
           >
             {hero.headline}
@@ -54,7 +55,7 @@ export default function AboutPage() {
           {/* Lead Text */}
           <p
             style={{
-              fontSize: '20px',
+              fontSize: 'clamp(17px, 2.5vw, 20px)',
               lineHeight: 1.6,
               color: '#E3E9F1',
               maxWidth: '820px',
@@ -66,7 +67,7 @@ export default function AboutPage() {
 
           <p
             style={{
-              fontSize: '18px',
+              fontSize: 'clamp(15px, 2vw, 18px)',
               lineHeight: 1.65,
               color: '#C9D2DE',
               maxWidth: '780px',
@@ -80,7 +81,7 @@ export default function AboutPage() {
 
       {/* 2. Who We Are */}
       <section style={{ background: '#FFFFFF' }}>
-        <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '112px 40px', boxSizing: 'border-box' }}>
+        <div style={{ maxWidth: '1240px', margin: '0 auto', padding: 'clamp(64px, 8vw, 112px) clamp(20px, 4vw, 40px)', boxSizing: 'border-box' }}>
           <div
             style={{
               display: 'flex',
@@ -104,14 +105,15 @@ export default function AboutPage() {
               </div>
               <h2
                 style={{
-                  fontFamily: "'Source Serif 4', Georgia, serif",
+                  fontFamily: "'Fraunces', Georgia, serif",
                   fontWeight: 600,
-                  fontSize: '40px',
-                  lineHeight: 1.15,
+                  fontSize: 'clamp(28px, 3.5vw + 0.5rem, 40px)',
+                  lineHeight: 1.2,
                   letterSpacing: '-0.015em',
                   color: '#14264F',
                   margin: 0,
-                  maxWidth: '480px'
+                  maxWidth: '480px',
+                  textWrap: 'balance'
                 }}
               >
                 {whoWeAre.title}
@@ -125,7 +127,7 @@ export default function AboutPage() {
                   key={i}
                   style={{
                     margin: 0,
-                    fontSize: '18px',
+                    fontSize: 'clamp(16px, 2vw, 18px)',
                     lineHeight: 1.7,
                     color: i === 0 ? '#14264F' : '#33435A',
                     fontWeight: i === 0 ? 500 : 400
@@ -141,7 +143,7 @@ export default function AboutPage() {
 
       {/* 3. What We Do (Two Core Areas) */}
       <section style={{ background: '#F3F5F9', borderTop: '1px solid #D5DBE3', borderBottom: '1px solid #D5DBE3' }}>
-        <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '112px 40px', boxSizing: 'border-box' }}>
+        <div style={{ maxWidth: '1240px', margin: '0 auto', padding: 'clamp(64px, 8vw, 112px) clamp(20px, 4vw, 40px)', boxSizing: 'border-box' }}>
           <div
             style={{
               fontSize: '13px',
@@ -156,14 +158,15 @@ export default function AboutPage() {
 
           <h2
             style={{
-              fontFamily: "'Source Serif 4', Georgia, serif",
+              fontFamily: "'Fraunces', Georgia, serif",
               fontWeight: 600,
-              fontSize: '44px',
-              lineHeight: 1.15,
+              fontSize: 'clamp(28px, 3.5vw + 0.5rem, 42px)',
+              lineHeight: 1.2,
               letterSpacing: '-0.015em',
-              margin: '0 0 72px 0',
+              margin: '0 0 clamp(36px, 5vw, 72px) 0',
               maxWidth: '780px',
-              color: '#14264F'
+              color: '#14264F',
+              textWrap: 'balance'
             }}
           >
             {whatWeDo.subtitle}
@@ -196,14 +199,15 @@ export default function AboutPage() {
 
                   <h3
                     style={{
-                      fontFamily: "'Source Serif 4', Georgia, serif",
+                      fontFamily: "'Fraunces', Georgia, serif",
                       fontWeight: 600,
-                      fontSize: '28px',
-                      lineHeight: 1.3,
+                      fontSize: 'clamp(22px, 3vw, 26px)',
+                      lineHeight: 1.25,
                       letterSpacing: '-0.01em',
                       color: '#14264F',
                       margin: '0 0 20px 0',
-                      maxWidth: '480px'
+                      maxWidth: '480px',
+                      textWrap: 'balance'
                     }}
                   >
                     {area.desc}
@@ -253,11 +257,11 @@ export default function AboutPage() {
 
       {/* 4. Mission & Vision */}
       <section style={{ background: '#FFFFFF' }}>
-        <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '112px 40px', boxSizing: 'border-box' }}>
+        <div style={{ maxWidth: '1240px', margin: '0 auto', padding: 'clamp(64px, 8vw, 112px) clamp(20px, 4vw, 40px)', boxSizing: 'border-box' }}>
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
               gap: '40px'
             }}
           >
@@ -267,7 +271,7 @@ export default function AboutPage() {
                 background: '#F3F5F9',
                 border: '1px solid #D5DBE3',
                 borderTop: '4px solid #C98A1B',
-                padding: '48px 40px',
+                padding: 'clamp(32px, 5vw, 48px) clamp(20px, 5vw, 40px)',
                 boxSizing: 'border-box'
               }}
             >
@@ -284,9 +288,9 @@ export default function AboutPage() {
               </div>
               <p
                 style={{
-                  fontFamily: "'Source Serif 4', Georgia, serif",
-                  fontSize: '24px',
-                  lineHeight: 1.5,
+                  fontFamily: "'Fraunces', Georgia, serif",
+                  fontSize: 'clamp(19px, 3vw, 24px)',
+                  lineHeight: 1.4,
                   color: '#14264F',
                   fontWeight: 600,
                   margin: 0
@@ -302,7 +306,7 @@ export default function AboutPage() {
                 background: '#F3F5F9',
                 border: '1px solid #D5DBE3',
                 borderTop: '4px solid #1B6F64',
-                padding: '48px 40px',
+                padding: 'clamp(32px, 5vw, 48px) clamp(20px, 5vw, 40px)',
                 boxSizing: 'border-box'
               }}
             >
@@ -319,9 +323,9 @@ export default function AboutPage() {
               </div>
               <p
                 style={{
-                  fontFamily: "'Source Serif 4', Georgia, serif",
-                  fontSize: '24px',
-                  lineHeight: 1.5,
+                  fontFamily: "'Fraunces', Georgia, serif",
+                  fontSize: 'clamp(19px, 3vw, 24px)',
+                  lineHeight: 1.4,
                   color: '#14264F',
                   fontWeight: 600,
                   margin: 0
@@ -336,7 +340,7 @@ export default function AboutPage() {
 
       {/* 5. Our Approach */}
       <section style={{ background: '#F3F5F9', borderTop: '1px solid #D5DBE3' }}>
-        <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '112px 40px', boxSizing: 'border-box' }}>
+        <div style={{ maxWidth: '1240px', margin: '0 auto', padding: 'clamp(64px, 8vw, 112px) clamp(20px, 4vw, 40px)', boxSizing: 'border-box' }}>
           <div
             style={{
               fontSize: '13px',
@@ -351,14 +355,15 @@ export default function AboutPage() {
 
           <h2
             style={{
-              fontFamily: "'Source Serif 4', Georgia, serif",
+              fontFamily: "'Fraunces', Georgia, serif",
               fontWeight: 600,
-              fontSize: '44px',
-              lineHeight: 1.15,
+              fontSize: 'clamp(28px, 3.5vw + 0.5rem, 42px)',
+              lineHeight: 1.2,
               letterSpacing: '-0.015em',
-              margin: '0 0 72px 0',
+              margin: '0 0 clamp(36px, 5vw, 72px) 0',
               maxWidth: '780px',
-              color: '#14264F'
+              color: '#14264F',
+              textWrap: 'balance'
             }}
           >
             {approach.title}
@@ -380,9 +385,9 @@ export default function AboutPage() {
                   <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '28px' }}>
                     <span
                       style={{
-                        fontFamily: "'Source Serif 4', Georgia, serif",
+                        fontFamily: "'Fraunces', Georgia, serif",
                         fontWeight: 600,
-                        fontSize: '40px',
+                        fontSize: 'clamp(32px, 4vw, 40px)',
                         lineHeight: 1,
                         letterSpacing: '-0.01em',
                         color: '#1F7A6E'
@@ -411,7 +416,7 @@ export default function AboutPage() {
                     {step.title.toUpperCase()}
                   </div>
 
-                  <p style={{ margin: 0, fontSize: '16px', lineHeight: 1.65, color: '#33435A', maxWidth: '280px' }}>
+                  <p style={{ margin: 0, fontSize: 'clamp(14.5px, 2vw, 16px)', lineHeight: 1.65, color: '#33435A', maxWidth: '280px' }}>
                     {step.desc}
                   </p>
                 </div>
@@ -423,7 +428,7 @@ export default function AboutPage() {
 
       {/* 6. Our Core Values */}
       <section style={{ background: '#FFFFFF', borderTop: '1px solid #D5DBE3' }}>
-        <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '112px 40px', boxSizing: 'border-box' }}>
+        <div style={{ maxWidth: '1240px', margin: '0 auto', padding: 'clamp(64px, 8vw, 112px) clamp(20px, 4vw, 40px)', boxSizing: 'border-box' }}>
           <div
             style={{
               fontSize: '13px',
@@ -438,14 +443,15 @@ export default function AboutPage() {
 
           <h2
             style={{
-              fontFamily: "'Source Serif 4', Georgia, serif",
+              fontFamily: "'Fraunces', Georgia, serif",
               fontWeight: 600,
-              fontSize: '44px',
-              lineHeight: 1.15,
+              fontSize: 'clamp(28px, 3.5vw + 0.5rem, 42px)',
+              lineHeight: 1.2,
               letterSpacing: '-0.015em',
-              margin: '0 0 72px 0',
+              margin: '0 0 clamp(36px, 5vw, 72px) 0',
               maxWidth: '780px',
-              color: '#14264F'
+              color: '#14264F',
+              textWrap: 'balance'
             }}
           >
             Principles that guide every solution and learning path.
@@ -454,7 +460,7 @@ export default function AboutPage() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
               columnGap: '48px',
               rowGap: '56px'
             }}
@@ -479,7 +485,7 @@ export default function AboutPage() {
                 >
                   {val.title.toUpperCase()}
                 </div>
-                <p style={{ margin: 0, fontSize: '17px', lineHeight: 1.6, color: '#33435A', maxWidth: '320px' }}>
+                <p style={{ margin: 0, fontSize: 'clamp(14.5px, 2vw, 17px)', lineHeight: 1.6, color: '#33435A', maxWidth: '320px' }}>
                   {val.desc}
                 </p>
               </div>
@@ -490,7 +496,7 @@ export default function AboutPage() {
 
       {/* 7. Why Choose TriCube Digital Solutions? */}
       <section style={{ background: '#14264F', color: '#FFFFFF' }}>
-        <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '112px 40px', boxSizing: 'border-box' }}>
+        <div style={{ maxWidth: '1240px', margin: '0 auto', padding: 'clamp(64px, 8vw, 112px) clamp(20px, 4vw, 40px)', boxSizing: 'border-box' }}>
           <div
             style={{
               fontSize: '13px',
@@ -505,13 +511,14 @@ export default function AboutPage() {
 
           <h2
             style={{
-              fontFamily: "'Source Serif 4', Georgia, serif",
+              fontFamily: "'Fraunces', Georgia, serif",
               fontWeight: 600,
-              fontSize: '44px',
-              lineHeight: 1.15,
+              fontSize: 'clamp(28px, 3.5vw + 0.5rem, 42px)',
+              lineHeight: 1.2,
               letterSpacing: '-0.015em',
-              margin: '0 0 64px 0',
-              maxWidth: '780px'
+              margin: '0 0 clamp(36px, 5vw, 64px) 0',
+              maxWidth: '780px',
+              textWrap: 'balance'
             }}
           >
             Built for transformation, designed for scale.
@@ -525,7 +532,7 @@ export default function AboutPage() {
                   display: 'flex',
                   alignItems: 'baseline',
                   gap: '20px',
-                  padding: '24px 28px',
+                  padding: 'clamp(18px, 3vw, 24px) clamp(16px, 3vw, 28px)',
                   background: 'rgba(255, 255, 255, 0.04)',
                   borderLeft: '3px solid #1B6F64',
                   boxSizing: 'border-box'
@@ -533,15 +540,15 @@ export default function AboutPage() {
               >
                 <span
                   style={{
-                    fontFamily: "'Source Serif 4', Georgia, serif",
+                    fontFamily: "'Fraunces', Georgia, serif",
                     fontWeight: 600,
-                    fontSize: '20px',
+                    fontSize: 'clamp(18px, 2.5vw, 20px)',
                     color: '#8FD8CB'
                   }}
                 >
                   0{idx + 1}
                 </span>
-                <span style={{ fontSize: '18px', lineHeight: 1.6, color: '#E3E9F1', fontWeight: 400 }}>
+                <span style={{ fontSize: 'clamp(15px, 2.5vw, 18px)', lineHeight: 1.6, color: '#E3E9F1', fontWeight: 400 }}>
                   {reason}
                 </span>
               </div>
@@ -556,7 +563,7 @@ export default function AboutPage() {
           style={{
             maxWidth: '1240px',
             margin: '0 auto',
-            padding: '88px 40px',
+            padding: 'clamp(56px, 8vw, 88px) clamp(20px, 4vw, 40px)',
             boxSizing: 'border-box',
             display: 'flex',
             flexWrap: 'wrap',
@@ -565,27 +572,29 @@ export default function AboutPage() {
             justifyContent: 'space-between'
           }}
         >
-          <div style={{ flex: '1 1 480px', minWidth: 0 }}>
+          <div style={{ flex: '1 1 480px', minWidth: 0, maxWidth: '720px' }}>
             <h2
               style={{
-                fontFamily: "'Source Serif 4', Georgia, serif",
+                fontFamily: "'Fraunces', Georgia, serif",
                 fontWeight: 600,
-                fontSize: '40px',
-                lineHeight: 1.15,
+                fontSize: 'clamp(28px, 3.5vw + 0.5rem, 42px)',
+                lineHeight: 1.2,
                 letterSpacing: '-0.015em',
-                margin: '0 0 16px 0'
+                margin: '0 0 16px 0',
+                color: '#FFFFFF',
+                textWrap: 'balance'
               }}
             >
               {cta.title}
             </h2>
-            <p style={{ fontSize: '18px', lineHeight: 1.6, margin: 0, maxWidth: '600px', color: '#EAF1FA' }}>
+            <p style={{ fontSize: 'clamp(16px, 2.5vw, 18px)', lineHeight: 1.6, margin: 0, maxWidth: '600px', color: '#EAF1FA' }}>
               {cta.text}
             </p>
           </div>
 
           <a
             className="btnlight"
-            href={cta.email}
+            href="/contact"
             style={{
               background: '#FFFFFF',
               color: '#14264F',

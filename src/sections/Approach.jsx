@@ -30,21 +30,22 @@ const stepsData = [
 export default function Approach() {
   return (
     <section id="approach" style={{ background: '#FFFFFF' }}>
-      <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '112px 40px', boxSizing: 'border-box' }}>
+      <div style={{ maxWidth: '1240px', margin: '0 auto', padding: 'clamp(64px, 8vw, 112px) clamp(20px, 4vw, 40px)', boxSizing: 'border-box' }}>
         <div style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '0.14em', color: '#1B6F64', marginBottom: '20px' }}>
           HOW WE WORK
         </div>
 
         <h2
           style={{
-            fontFamily: "'Source Serif 4', Georgia, serif",
+            fontFamily: "'Fraunces', Georgia, serif",
             fontWeight: 600,
-            fontSize: '44px',
-            lineHeight: 1.15,
+            fontSize: 'clamp(28px, 3.5vw + 0.5rem, 42px)',
+            lineHeight: 1.2,
             letterSpacing: '-0.015em',
-            margin: '0 0 72px 0',
+            margin: '0 0 clamp(36px, 5vw, 72px) 0',
             maxWidth: '780px',
-            color: '#14264F'
+            color: '#14264F',
+            textWrap: 'balance'
           }}
         >
           A clear process. From first conversation to successful delivery.
@@ -64,9 +65,9 @@ export default function Approach() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '28px' }}>
                 <span
                   style={{
-                    fontFamily: "'Source Serif 4', Georgia, serif",
+                    fontFamily: "'Fraunces', Georgia, serif",
                     fontWeight: 600,
-                    fontSize: '40px',
+                    fontSize: 'clamp(32px, 4vw, 40px)',
                     lineHeight: 1,
                     letterSpacing: '-0.01em',
                     color: '#1F7A6E'
@@ -87,7 +88,7 @@ export default function Approach() {
                 {step.title}
               </div>
 
-              <p style={{ margin: 0, fontSize: '16px', lineHeight: 1.65, color: '#33435A', maxWidth: '280px' }}>
+              <p style={{ margin: 0, fontSize: 'clamp(14.5px, 2vw, 16px)', lineHeight: 1.65, color: '#33435A', maxWidth: '280px' }}>
                 {step.desc}
               </p>
             </div>

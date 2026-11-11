@@ -37,9 +37,9 @@ export default function ClientsMarquee() {
       <div
         style={{
           width: '100%',
-          maxWidth: '1320px',
+          maxWidth: '1240px',
           margin: '0 auto',
-          padding: '112px 40px 0',
+          padding: 'clamp(64px, 8vw, 112px) clamp(20px, 4vw, 40px) 0',
           boxSizing: 'border-box',
           textAlign: 'left'
         }}
@@ -57,22 +57,23 @@ export default function ClientsMarquee() {
         </div>
         <h2
           style={{
-            fontFamily: "'Source Serif 4', Georgia, serif",
+            fontFamily: "'Fraunces', Georgia, serif",
             fontWeight: 600,
-            fontSize: '44px',
-            lineHeight: 1.15,
+            fontSize: 'clamp(28px, 3.5vw + 0.5rem, 42px)',
+            lineHeight: 1.2,
             letterSpacing: '-0.015em',
             margin: '0 0 20px 0',
             color: '#14264F',
-            maxWidth: '780px'
+            maxWidth: '720px',
+            textWrap: 'balance'
           }}
         >
           Trusted by businesses. Driven by results.
         </h2>
         <p
           style={{
-            margin: '0 0 64px 0',
-            fontSize: '19px',
+            margin: '0 0 clamp(32px, 5vw, 64px) 0',
+            fontSize: 'clamp(16px, 2.5vw, 19px)',
             lineHeight: 1.6,
             color: '#33435A',
             maxWidth: '620px'
@@ -89,8 +90,8 @@ export default function ClientsMarquee() {
         style={{
           borderTop: '1px solid #D5DBE3',
           borderBottom: '1px solid #D5DBE3',
-          padding: '44px 0',
-          marginBottom: '112px',
+          padding: 'clamp(28px, 4vw, 44px) 0',
+          marginBottom: 'clamp(64px, 8vw, 112px)',
           background: '#FFFFFF'
         }}
       >
@@ -98,7 +99,7 @@ export default function ClientsMarquee() {
           style={{
             maxWidth: '1240px',
             margin: '0 auto',
-            padding: '0 40px',
+            padding: '0 clamp(20px, 4vw, 40px)',
             boxSizing: 'border-box',
             display: 'flex',
             flexWrap: 'wrap',
@@ -132,10 +133,10 @@ export default function ClientsMarquee() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   height: '84px',
-                  flex: '1 1 240px',
+                  flex: '1 1 200px',
                   maxWidth: '320px',
-                  minWidth: '200px',
-                  padding: '12px 28px',
+                  minWidth: '160px',
+                  padding: '12px clamp(14px, 3vw, 28px)',
                   background: '#FFFFFF',
                   border: '1px solid #D5DBE3',
                   boxSizing: 'border-box',

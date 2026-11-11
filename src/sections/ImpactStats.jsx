@@ -44,7 +44,7 @@ export default function ImpactStats() {
             </div>
             <div
               style={{
-                fontFamily: "'Source Serif 4', Georgia, serif",
+                fontFamily: "'Fraunces', Georgia, serif",
                 fontWeight: 600,
                 fontSize: '28px',
                 textAlign: 'center'

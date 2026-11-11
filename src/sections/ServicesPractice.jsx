@@ -7,7 +7,7 @@ export default function ServicesPractice() {
 
   return (
     <section id="services" style={{ background: '#FFFFFF' }}>
-      <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '112px 40px', boxSizing: 'border-box' }}>
+      <div style={{ maxWidth: '1240px', margin: '0 auto', padding: 'clamp(64px, 8vw, 112px) clamp(20px, 4vw, 40px)', boxSizing: 'border-box' }}>
         {/* Section Header */}
         <div style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '0.14em', color: '#1B6F64', marginBottom: '20px' }}>
           SERVICES
@@ -20,23 +20,24 @@ export default function ServicesPractice() {
             gap: '24px 64px',
             alignItems: 'flex-end',
             justifyContent: 'space-between',
-            marginBottom: '56px'
+            marginBottom: 'clamp(36px, 5vw, 56px)'
           }}
         >
           <h2
             style={{
-              fontFamily: "'Source Serif 4', Georgia, serif",
+              fontFamily: "'Fraunces', Georgia, serif",
               fontWeight: 600,
-              fontSize: '40px',
-              lineHeight: 1.15,
+              fontSize: 'clamp(28px, 3.5vw + 0.5rem, 42px)',
+              lineHeight: 1.2,
               letterSpacing: '-0.015em',
               margin: 0,
-              maxWidth: '640px'
+              maxWidth: '640px',
+              textWrap: 'balance'
             }}
           >
             Seven practices, one delivery model.
           </h2>
-          <p style={{ fontSize: '17px', lineHeight: 1.6, color: '#33435A', margin: 0, maxWidth: '440px' }}>
+          <p style={{ fontSize: 'clamp(15px, 2vw, 17px)', lineHeight: 1.6, color: '#33435A', margin: 0, maxWidth: '440px' }}>
             Each engagement is staffed and governed the same way, whether it runs for three months or ten years. Select a service to see what it covers.
           </p>
         </div>
@@ -66,7 +67,7 @@ export default function ServicesPractice() {
                     border: 0,
                     borderBottom: '1px solid #D5DBE3',
                     cursor: 'pointer',
-                    fontFamily: "'IBM Plex Sans', Arial, sans-serif",
+                    fontFamily: "'Plus Jakarta Sans', Arial, sans-serif",
                     fontSize: '17px',
                     fontWeight: 600,
                     background: isSelected ? '#14264F' : '#F3F5F9',
@@ -89,25 +90,26 @@ export default function ServicesPractice() {
           </div>
 
           {/* Right Column: Selected Practice Details */}
-          <div style={{ flex: '2 1 460px', minWidth: 0, background: '#14264F', color: '#FFFFFF', padding: '56px 56px', boxSizing: 'border-box' }}>
+          <div style={{ flex: '2 1 460px', minWidth: 0, background: '#14264F', color: '#FFFFFF', padding: 'clamp(32px, 5vw, 56px) clamp(20px, 5vw, 56px)', boxSizing: 'border-box' }}>
             <div style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '0.14em', color: '#8FD8CB', marginBottom: '20px' }}>
               {selectedService.label}
             </div>
 
             <h3
               style={{
-                fontFamily: "'Source Serif 4', Georgia, serif",
+                fontFamily: "'Fraunces', Georgia, serif",
                 fontWeight: 600,
-                fontSize: '36px',
-                lineHeight: 1.15,
+                fontSize: 'clamp(24px, 3.5vw, 32px)',
+                lineHeight: 1.2,
                 letterSpacing: '-0.015em',
-                margin: '0 0 20px 0'
+                margin: '0 0 20px 0',
+                textWrap: 'balance'
               }}
             >
               {selectedService.title}
             </h3>
 
-            <p style={{ fontSize: '18px', lineHeight: 1.65, color: '#E3E9F1', margin: '0 0 36px 0', maxWidth: '620px' }}>
+            <p style={{ fontSize: 'clamp(15px, 2vw, 18px)', lineHeight: 1.65, color: '#E3E9F1', margin: '0 0 36px 0', maxWidth: '620px' }}>
               {selectedService.long}
             </p>
 
@@ -118,7 +120,7 @@ export default function ServicesPractice() {
                   style={{
                     padding: '16px 0',
                     borderBottom: '1px solid #34466E',
-                    fontSize: '17px',
+                    fontSize: 'clamp(14.5px, 2vw, 17px)',
                     fontWeight: 500
                   }}
                 >

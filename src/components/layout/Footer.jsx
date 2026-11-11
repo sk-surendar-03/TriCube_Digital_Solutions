@@ -9,12 +9,12 @@ export default function Footer() {
 
   return (
     <footer className="foot" style={{ background: '#14264F', color: '#C9D2DE' }}>
-      <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '72px 40px 32px', boxSizing: 'border-box' }}>
+      <div style={{ maxWidth: '1240px', margin: '0 auto', padding: 'clamp(56px, 8vw, 72px) clamp(20px, 4vw, 40px) 32px', boxSizing: 'border-box' }}>
         <div
           style={{
             display: 'flex',
             flexWrap: 'wrap',
-            gap: '48px 64px',
+            gap: '36px clamp(24px, 4vw, 64px)',
             paddingBottom: '56px',
             borderBottom: '1px solid #34466E'
           }}
@@ -45,7 +45,7 @@ export default function Footer() {
               />
               <span
                 style={{
-                  fontFamily: "'Source Serif 4', Georgia, serif",
+                  fontFamily: "'Fraunces', Georgia, serif",
                   fontWeight: 600,
                   fontSize: '22px',
                   letterSpacing: '0.03em',
@@ -55,7 +55,7 @@ export default function Footer() {
                 TRICUBE{' '}
                 <span
                   style={{
-                    fontFamily: "'IBM Plex Sans', Arial, sans-serif",
+                    fontFamily: "'Plus Jakarta Sans', Arial, sans-serif",
                     fontSize: '11px',
                     letterSpacing: '0.2em',
                     color: '#C9D2DE'

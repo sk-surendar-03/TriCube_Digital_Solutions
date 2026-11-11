@@ -22,30 +22,31 @@ const strengthsData = [
 export default function AboutWhyUs() {
   return (
     <section id="about" style={{ background: '#F3F5F9', borderTop: '1px solid #D5DBE3' }}>
-      <div style={{ maxWidth: '1240px', margin: '0 auto', padding: '112px 40px', boxSizing: 'border-box' }}>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 80px', alignItems: 'flex-start', marginBottom: '80px' }}>
+      <div style={{ maxWidth: '1240px', margin: '0 auto', padding: 'clamp(64px, 8vw, 112px) clamp(20px, 4vw, 40px)', boxSizing: 'border-box' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 80px', alignItems: 'flex-start', marginBottom: 'clamp(40px, 6vw, 80px)' }}>
           <div style={{ flex: '1 1 380px', minWidth: 0 }}>
             <div style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '0.14em', color: '#1F7A6E', marginBottom: '20px' }}>
               WHY TRICUBE
             </div>
             <h2
               style={{
-                fontFamily: "'Source Serif 4', Georgia, serif",
+                fontFamily: "'Fraunces', Georgia, serif",
                 fontWeight: 600,
-                fontSize: '44px',
-                lineHeight: 1.15,
+                fontSize: 'clamp(28px, 3.5vw + 0.5rem, 42px)',
+                lineHeight: 1.2,
                 letterSpacing: '-0.015em',
                 margin: 0,
                 color: '#14264F',
-                maxWidth: '520px'
+                maxWidth: '520px',
+                textWrap: 'balance'
               }}
             >
               Built on trust. Focused on results.
             </h2>
           </div>
 
-          <div style={{ flex: '1 1 380px', minWidth: 0, paddingTop: '34px' }}>
-            <p style={{ margin: 0, fontSize: '21px', lineHeight: 1.6, color: '#33435A', maxWidth: '600px' }}>
+          <div style={{ flex: '1 1 380px', minWidth: 0, paddingTop: 'clamp(0px, 2vw, 34px)' }}>
+            <p style={{ margin: 0, fontSize: 'clamp(17px, 2.5vw, 21px)', lineHeight: 1.6, color: '#33435A', maxWidth: '600px' }}>
               We combine software development expertise with practical IT education to help businesses grow and individuals build technology careers.
             </p>
           </div>
@@ -69,7 +70,7 @@ export default function AboutWhyUs() {
               <div style={{ fontSize: '14px', fontWeight: 600, letterSpacing: '0.14em', color: '#1F7A6E', marginBottom: '14px' }}>
                 {item.title}
               </div>
-              <p style={{ margin: 0, fontSize: '17px', lineHeight: 1.6, color: '#33435A', maxWidth: '260px' }}>
+              <p style={{ margin: 0, fontSize: 'clamp(14.5px, 2vw, 17px)', lineHeight: 1.6, color: '#33435A', maxWidth: '260px' }}>
                 {item.desc}
               </p>
             </div>

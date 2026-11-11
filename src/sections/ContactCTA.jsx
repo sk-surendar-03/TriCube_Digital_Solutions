@@ -7,7 +7,7 @@ export default function ContactCTA() {
         style={{
           maxWidth: '1240px',
           margin: '0 auto',
-          padding: '88px 40px',
+          padding: 'clamp(56px, 8vw, 88px) clamp(20px, 4vw, 40px)',
           boxSizing: 'border-box',
           display: 'flex',
           flexWrap: 'wrap',
@@ -16,27 +16,29 @@ export default function ContactCTA() {
           justifyContent: 'space-between'
         }}
       >
-        <div style={{ flex: '1 1 480px', minWidth: 0 }}>
+        <div style={{ flex: '1 1 480px', minWidth: 0, maxWidth: '720px' }}>
           <h2
             style={{
-              fontFamily: "'Source Serif 4', Georgia, serif",
+              fontFamily: "'Fraunces', Georgia, serif",
               fontWeight: 600,
-              fontSize: '40px',
-              lineHeight: 1.15,
+              fontSize: 'clamp(28px, 3.5vw + 0.5rem, 42px)',
+              lineHeight: 1.2,
               letterSpacing: '-0.015em',
-              margin: '0 0 16px 0'
+              margin: '0 0 16px 0',
+              color: '#FFFFFF',
+              textWrap: 'balance'
             }}
           >
             Discuss your next programme with our team.
           </h2>
-          <p style={{ fontSize: '18px', lineHeight: 1.6, margin: 0, maxWidth: '600px', color: '#EAF1FA' }}>
+          <p style={{ fontSize: 'clamp(16px, 2.5vw, 18px)', lineHeight: 1.6, margin: 0, maxWidth: '600px', color: '#EAF1FA' }}>
             Tell us what you are trying to achieve. A senior member of our team will respond within business days.
           </p>
         </div>
 
         <a
           className="btnlight"
-          href="mailto:[EMAIL ADDRESS]"
+          href="/contact"
           style={{
             background: '#FFFFFF',
             color: '#14264F',

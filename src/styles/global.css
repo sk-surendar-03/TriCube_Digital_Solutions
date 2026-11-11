@@ -3,6 +3,11 @@
    Preserving exact typography, colors, animations, and media breakpoints
    ========================================================================== */
 
+:root {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,15 +18,20 @@ html {
 
 body {
   margin: 0;
-  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  font-family: var(--font-sans);
   color: #14264F;
   background: #FFFFFF;
   -webkit-font-smoothing: antialiased;
 }
 
+button, input, select, textarea {
+  font-family: var(--font-sans);
+}
+
 a {
   color: #1B6F64;
   text-decoration: none;
+  font-family: inherit;
 }
 
 a:hover {
@@ -216,14 +226,60 @@ a:hover {
   }
 }
 
-@media (max-width: 900px) {
+/* Tablet statistics layout (561px to 900px): Balanced 3 + 2 grid */
+@media (max-width: 900px) and (min-width: 561px) {
   .stats {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
   }
   .stat {
     border-left: 0 !important;
     padding: 24px 16px !important;
   }
+  .stat:nth-child(1),
+  .stat:nth-child(2),
+  .stat:nth-child(3) {
+    grid-column: span 2;
+  }
+  .stat:nth-child(2),
+  .stat:nth-child(3) {
+    border-left: 1px solid #D5DBE3 !important;
+  }
+  .stat:nth-child(4),
+  .stat:nth-child(5) {
+    grid-column: span 3;
+    border-top: 1px solid #D5DBE3;
+  }
+  .stat:nth-child(5) {
+    border-left: 1px solid #D5DBE3 !important;
+  }
+}
+
+/* Mobile statistics layout (<= 560px): 2 + 2 + 1 centered */
+@media (max-width: 560px) {
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  .stat {
+    border-left: 0 !important;
+    padding: 24px 12px !important;
+  }
+  .stat:nth-child(2n) {
+    border-left: 1px solid #D5DBE3 !important;
+  }
+  .stat:nth-child(3),
+  .stat:nth-child(4) {
+    border-top: 1px solid #D5DBE3;
+  }
+  .stat:nth-child(5) {
+    grid-column: 1 / -1 !important;
+    border-top: 1px solid #D5DBE3;
+    border-left: 0 !important;
+  }
+}
+
+/* Mobile Navigation */
+.mobile-menu-toggle {
+  display: none !important;
 }
 
 @media (max-width: 900px) {
@@ -231,6 +287,15 @@ a:hover {
     display: none !important;
   }
   .utilright {
+    display: none !important;
+  }
+  .mobile-menu-toggle {
+    display: inline-flex !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .desktop-contact-btn {
     display: none !important;
   }
 }
